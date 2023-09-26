@@ -9,7 +9,7 @@
 
 .headerTopPart{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 45px;
 }
@@ -30,4 +30,56 @@
 
 .headerBottoPart{
     background-color: aqua;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
+.logo{
+    font-size: 30px;
+}
+.headerBottoPartLinks{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.headerBottoPartLinks>span{
+    margin-left: 25px;
+    border-left: 2px solid red;
+    padding-left: 10px;
+    cursor: pointer;
+}
+ .byNow{
+    background-color: aquamarine;
+    display: inline-block;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    border: none !important;
+}
+.search{
+    background-color: #000;
+    display: inline-block;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
