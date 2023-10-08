@@ -1,26 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.navbar{
+
+
+/* Header */
+.navbar {
     width: 100%;
     background-color: red;
 }
 
-.headerTopPart{
+.headerTopPart {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 45px;
 }
-.headerSocialLinks>span{
+
+.headerSocialLinks>span {
     margin-left: 10px;
     border-left: 2px solid forestgreen;
     padding-left: 10px;
 }
 
 
-.headerBtn{
+.headerBtn {
     border: 2px solid #fff;
     padding: 4px 10px;
     border-radius: 20px;
@@ -28,7 +32,7 @@
 }
 
 
-.headerBottoPart{
+.headerBottoPart {
     background-color: aqua;
     height: 60px;
     display: flex;
@@ -36,21 +40,35 @@
     align-items: center;
 
 }
-.logo{
+
+.logo {
     font-size: 30px;
 }
-.headerBottoPartLinks{
-display: flex;
-justify-content: center;
-align-items: center;
+
+.headerBottoPartLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.headerBottoPartLinks>span{
+
+.headerBottoPartLinks>span {
     margin-left: 25px;
     border-left: 2px solid red;
     padding-left: 10px;
     cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
- .byNow{
+
+.headerBottoPartLinks span a {
+    text-decoration: none;
+    color: #000;
+}
+
+.byNow {
     background-color: aquamarine;
     display: inline-block;
     height: 60px;
@@ -60,26 +78,56 @@ align-items: center;
     padding-right: 10px;
     border: none !important;
 }
-.search{
+
+.search {
     background-color: #000;
     display: inline-block;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff ;
+    color: #fff;
+    width: 50px;
+    cursor: pointer;
 }
 
 
 
+/* Home section */
 
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    background: linear-gradient(rgb(54, 55, 55, 0.5), rgb(54, 55, 55, 0.89)), url('./images/background.png') center center no-repeat;
+    background-attachment: fixed;
+}
 
-
-
-
-
-
-
-
+.homeCentDiv {
+    border-left: 2px solid red;
+    height: 200px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+.homeCentDiv .title1{
+    word-spacing: 10px;
+}
+.homeCentDiv .title2{
+    word-spacing: 15px;
+    font-size: 23px;
+}
+.homeCentDiv .homebtn{
+    outline: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    margin: 0px 10px;
+}
 
 
