@@ -6,7 +6,7 @@
 .mainContainer{
     
     margin: 100px auto 0px auto;
-    background-color: yellowgreen;
+    background-color: #007fff;
     width: max-content;
     padding: 15px;
     border-radius: 15px;
@@ -70,6 +70,6 @@ input[type=number] {
 
   }
   .mainContainer .btnContainer .equalbtn,.mainContainer .btnContainer .clearInput{
-    background-color: darkgreen ;
+    background-color: #00376eca ;
     color: #fff;
   }
