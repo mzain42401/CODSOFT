@@ -1,109 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        section {
-            padding: 20px;
-            background-color: #fff;
-            margin: 20px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        }
-
-        #about img {
-            max-width: 100%;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .project {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-    </style>
-    <title>Your Name - Portfolio</title>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+   
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer | Designer | Creator</p>
-    </header>
-    
-    <section id="about">
-        <img src="your-image.jpg" alt="Your Name">
         <div>
-            <h2>About Me</h2>
-            <p>Your short bio highlighting your skills and experience goes here.</p>
+            <a href="./index.html"><span class="logo-text">MUHAMMAD <span class="blue-span"> ZAIN</span>ALI</span></a>
         </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Web Design</li>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project Title 1</h3>
-            <p>Description of Project 1.</p>
+
+        <div class="header-links">
+            <!-- cancel icon for menu in mobile viewport -->
+            <div class="cancel-icon">
+                <i class="fa-solid fa-xmark" style="font-size: larger;"></i>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="./assets/CV.pdf" download=""
+                    target="_blank"><button class="cvBtn">Download Resume</button></a>
+            </div>
+
         </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project Title 2</h3>
-            <p>Description of Project 2.</p>
+
+        <!-- menu icon for menu in mobile viewport -->
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <!-- Add more projects as needed -->
-    </section>
-    
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="your-resume.pdf" target="_blank" download>Download Resume (PDF)</a>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your@email.com</p>
-        <p>Phone: +1 123-456-7890</p>
-    </section>
-    
+
+    </header>
+    <!-- main content -->
+    <main>
+        <!-- hero section -->
+        <section class="hero-section">
+            <div class="hero-text">
+                <h3 title="Hello buddy 👋">Hi There,</h3>
+                <h1><span class="myname"><span class="blue-span">MUHAMMAD</span>ZAIN ALI </span></h1>
+                <p class="grey-span">
+                    I develop Websites, software, ui Design and I love to code.❤️
+                </p>
+                <div class="social-icon">
+                    <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="#about"><button class="btn">Read More</button></a>
+
+            </div>
+            <div class="hero-img">
+                <img src="./assets/img/gjh.png" alt="my image">
+            </div>
+        </section>
+        <!-- service section -->
+        <section class="service-section">
+            <h1>My <span class="blue-span">Services</span></h1>
+            <div class="service-cards-container">
+                <div class="service-card">
+                    <i class="fa-solid fa-earth-asia"></i>
+                    <h4>Web Developer</h4>
+                    <p>I make a websites and webapp to digitalize you.</p>
+                    <a href="#" target="_blank">view demo</a>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-shapes"></i>
+                    <h4>Designer</h4>
+                    <p>I Design - Banners, Logo, website, app.</p>
+                    <a href="#" target="_blank">view demo</a>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-icons"></i>
+                    <h4>Content Creater</h4>
+                    <p>I make videos in social media to document My Life.</p>
+                    <a href="#" target="_blank">view demo</a>
+                </div>
+            </div>
+        </section>
+        <!-- about section -->
+        <section class="about-section" id="about">
+            <div class="img-div">
+                <img src="./assets/img/gjh.png" alt="vasanthkumar image">
+            </div>
+            <div>
+                <!-- about me list -->
+
+                <ol>
+                    <li>
+                        <h1>I'm a <span class="blue-span">Developer</span> also a <span
+                                class="blue-span">Designer</span></h1>
+                    </li>
+                    <li><strong>Expirence : </strong>Fresher</li>
+                    <li><strong>Who I'm : </strong> Developer,Editor,Content Creater,Designer</li>
+                    <li><strong>Place : </strong>Karachi, Sindh, Pakistan.</li>
+                    <li><strong>Email : </strong><a href="mailto:mzain42401@gmail.com">mzain42401@gmail.com</a>
+                    </li>
+                    <li><strong>Phone : </strong><a href="#">+91 86109XXXXX</a></li>
+                    <li><a href="#contact" target="_blank"><button class="btn">Connect with
+                                me</button></a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="contact-section" id="contact">
+            <h1>My <span class="blue-span">Contact</span></h1>
+            <form action="#">
+
+                <input type="text" name="userName" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="submit-btn">Submit</button>
+            </form>
+
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2023 Your Name</p>
-        <!-- Add additional links or information here -->
+        <p>Copyright &copy; 2023 - <a href="#" target="_blank">M ZAIN ALI</a> - AllRights
+            Reserved.</p>
     </footer>
+
+    <!-- script link only for menu toggle & theme picker -->
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

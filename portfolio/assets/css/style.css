@@ -1,0 +1,394 @@
+/* fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,300&family=Poppins:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    margin-top: 7px;
+    font-weight: 900;
+    padding: 5px 10px;
+    background-color: crimson   ;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+
+
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+.theme-picker {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.submit-btn {
+    font-weight: 900;
+    padding: 10px;
+    background-color: crimson;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 42, 85);
+}
+
+/* header styles */
+header {
+box-shadow: 10px 10px 10px lightgray;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    font-weight: bolder;
+}
+
+header button {
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: crimson;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+header button:hover {
+    cursor: pointer;
+}
+
+.logo-text {
+    letter-spacing: 2px;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.cancel-icon {
+    display: none;
+}
+
+
+/* hero section design */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myname{
+    font-size: 50px;
+}
+.hero-text {
+    padding: 20px;
+    margin-left: 60px;
+}
+
+.social-icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    font-size: 30px;
+}
+.social-icon a{
+    margin: 5px;
+}
+.social-icon a i.fa-square-facebook:hover {
+    border-radius: 5px;
+    background: lightskyblue;
+}
+
+.social-icon a i.fa-linkedin:hover {
+    color: #0072b1;
+}
+
+.social-icon a i.fa-github:hover {
+    color: #4078c0;
+}
+
+/* about section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+}
+
+.img-div {
+    height: 300px;
+    width: 300px;
+}
+
+.about-section img {
+    border-radius: 50%;
+
+}
+
+.about-section ol {
+    list-style: none;
+    margin-left: 90px;
+
+}
+
+.about-section ol li h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+
+}
+
+.about-section li {
+
+    margin-bottom: 10px;
+
+}
+
+
+
+
+/* service section */
+
+.service-section {
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px;
+}
+
+.service-cards-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: crimson;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.service-card:hover {
+    background-color: rgb(255, 33, 77);
+}
+
+.service-card a {
+    color: #fff;
+
+}
+
+
+
+
+
+.service-card i {
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* contact Section */
+
+.contact-section {
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 80px;
+}
+
+.contact-section h1 {
+    color: crimson;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+
+}
+
+.contact-section form input,
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+
+
+}
+
+/* footer section */
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+
+
+
+/* media queries  */
+
+@media (max-width: 860px) {
+
+    /* header media queries */
+    .header-links {
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        top: 0;
+        right: -100vh;
+        display: none;
+        justify-content: start;
+        padding: 20px;
+        transition: right 0.3s ease;
+    }
+
+    header ul {
+        margin-top: 40px;
+        flex-direction: column;
+        line-height: 3rem;
+    }
+
+    .cancel-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+
+    /* hero section media queries */
+    .hero-section {
+        flex-direction: column;
+    }
+
+    /* service section */
+    .service-cards-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        margin: 10px 0;
+    }
+
+    /* about section media queries */
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-section ol {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .about-section img {
+        height: auto;
+    }
+
+    .about-section ol li h1 {
+        font-size: 30px;
+    }
+
+    .about-section {
+        padding: 40px 30px;
+    }
+
+    /* contact section media queries */
+    .contact-section form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0;
+
+    }
+
+}
